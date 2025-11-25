@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Because Cats 😺</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Because Cats</h1>
+    <p>The internet’s most important topic.</p>
+
+    <!-- Dark Mode Toggle -->
+    <button id="modeToggle" class="mode-toggle">🌙 Dark Mode</button>
+</header>
+
+<section class="gallery">
+    <h2>Cat Gallery</h2>
+    <div class="grid">
+
+        <!-- Cat Cards -->
+        <div class="cat-card">
+            <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=600" alt="Cute cat">
+            <div class="vote-buttons">
+                <button onclick="vote(this, 'cute')">Cute 😺</button>
+                <button onclick="vote(this, 'die')">I will die for you ❤️</button>
+            </div>
+        </div>
+
+        <div class="cat-card">
+            <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=600" alt="Cute cat">
+            <div class="vote-buttons">
+                <button onclick="vote(this, 'cute')">Cute 😺</button>
+                <button onclick="vote(this, 'die')">I will die for you ❤️</button>
+            </div>
+        </div>
+
+        <div class="cat-card">
+            <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=600" alt="Cute cat">
+            <div class="vote-buttons">
+                <button onclick="vote(this, 'cute')">Cute 😺</button>
+                <button onclick="vote(this, 'die')">I will die for you ❤️</button>
+            </div>
+        </div>
+
+        <div class="cat-card">
+            <img src="https://images.unsplash.com/photo-1511044568932-338cba0ad803?w=600" alt="Cute cat">
+            <div class="vote-buttons">
+                <button onclick="vote(this, 'cute')">Cute 😺</button>
+                <button onclick="vote(this, 'die')">I will die for you ❤️</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="fun-facts">
+    <h2>Cat Fun Facts</h2>
+    <ul>
+        <li>Cats sleep 70% of their lives 😴</li>
+        <li>A group of cats is called a "clowder"</li>
+        <li>They can rotate their ears 180°</li>
+        <li>Cats have over 100 different vocal sounds</li>
+    </ul>
+</section>
+
+<footer>
+    <p><strong>Made with ❤️ for cats </strong></p>
+</footer>
+
+<!-- Animation container -->
+<div id="heart-container"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffaf4;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* 🌙 Dark Mode Colors */
+body.dark {
+    background: #1a1a1a;
+    color: #f5f5f5;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #ffddb0;
+}
+
+body.dark header {
+    background: #333;
+}
+
+.mode-toggle {
+    margin-top: 15px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background: #ffd39f;
+    cursor: pointer;
+}
+
+body.dark .mode-toggle {
+    background: #555;
+    color: #fff;
+}
+
+.gallery {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.cat-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+body.dark .cat-card {
+    background: #2a2a2a;
+    box-shadow: 0 2px 6px rgba(255,255,255,0.1);
+}
+
+.cat-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.vote-buttons {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.vote-buttons button {
+    background: #ffb98a;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.vote-buttons button:hover {
+    background: #ff9c5c;
+    transform: scale(1.05);
+}
+
+body.dark .vote-buttons button {
+    background: #925b38;
+}
+
+/* ❤️ Floating hearts */
+#heart-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+}
+
+.heart {
+    position: absolute;
+    font-size: 24px;
+    animation: floatUp 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.gallery, .fun-facts {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.gallery h2, .fun-facts h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-80px) scale(1.8);
+        opacity: 0;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffe4c4;
+    margin-top: 30px;
+}
+
+body.dark footer {
+    background: #333;
+}
